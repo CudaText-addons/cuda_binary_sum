@@ -1,0 +1,12 @@
+[info]
+title=Binary Sum
+desc=Decomposes a number into sum of 2^N
+type=cudatext-plugin
+subdir=cuda_binary_sum
+homepage=https://github.com/CudaText-addons/cuda_binary_sum
+
+[item2]
+section=commands
+caption=Binary Sum
+method=show_sum
+
