@@ -1,5 +1,7 @@
 from cudatext import *
 
+MAX_BITS = 64
+
 class Command:
     def show_sum(self):
 
@@ -16,7 +18,7 @@ class Command:
 
         res = []
         res2 = []
-        for i in range(32):
+        for i in range(MAX_BITS):
             step = 1<<i
             if n & step == step:
                 res += [str(step)]
