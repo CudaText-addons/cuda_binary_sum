@@ -3,10 +3,23 @@ from cudatext import *
 MAX_BITS = 64
 
 class Command:
-    def show_sum(self):
+    def show_msg(self):
 
         s = dlg_input('Enter decimal or hex (with 0x), to show its binary sum:', '')
         if not s: return
+        s = self.get_result(s)
+        msg_box(s, MB_OK+MB_ICONINFO)
+
+    def show_editor(self):
+
+        s = dlg_input('Enter decimal or hex (with 0x), to show its binary sum:', '')
+        if not s: return
+        s = self.get_result(s)
+        file_open('')
+        ed.set_text_all(s)
+
+    def get_result(self, s):
+
         try:
             if s.startswith('0x'):
                 n = int(s, 16)
@@ -22,11 +35,12 @@ class Command:
             step = 1<<i
             if n & step == step:
                 res += [str(step)]
-                res2 += ['2^'+str(i)]
+                res2 += [str(i)]
 
         res = ' + '.join(res)
-        res2 = ' + '.join(res2)
+        res2 = ' '.join(res2)
         s10 = str(n)
         s16 = hex(n)
 
-        msg_box('%s (%s)\n= %s\n= %s' % (s10, s16, res, res2), MB_OK+MB_ICONINFO)
+        return '%s (%s)\n= %s\nbits %s' % (s10, s16, res, res2)
+

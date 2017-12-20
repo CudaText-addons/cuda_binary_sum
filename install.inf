@@ -7,6 +7,10 @@ homepage=https://github.com/CudaText-addons/cuda_binary_sum
 
 [item2]
 section=commands
-caption=Binary Sum
-method=show_sum
+caption=Binary Sum\Show in messagebox
+method=show_msg
 
+[item3]
+section=commands
+caption=Binary Sum\Show in editor
+method=show_editor
