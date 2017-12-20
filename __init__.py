@@ -44,3 +44,34 @@ class Command:
 
         return '%s (%s)\n= %s\nbits %s' % (s10, s16, res, res2)
 
+
+    def base2tohex(self):
+        '''
+        E.g. I have a file with the following lines:
+        00000000000000000000000000001000, 00000000000000000000000000000000, 00000000000000000000000000010000, 00000000000000000000000000111000, 00000000000000000000000000110000, 00000000000000000000000001000000,
+        And I want to see them in hex representation:
+        0000_0008, 0000_0000, 0000_0010, 0000_0038, 0000_0030, 0000_0040,
+        '''
+
+        def do_fmt(n):
+            s = '%08x'%n
+            s = s[:4] + '_' + s[4:]
+            return s
+
+        s = ed.get_text_all()
+
+        s = s.replace(' ', ',')
+        s = s.replace(';', ',')
+        s = s.replace('\n', ',')
+        s = s.replace('\t', ',')
+        l = s.split(',')
+
+        l = [int(s, 2) for s in l if s]
+        l = [do_fmt(n) for n in l]
+
+        out = ', '.join(l)+','
+
+        #put to new tab
+        file_open('')
+        ed.set_text_all(out)
+

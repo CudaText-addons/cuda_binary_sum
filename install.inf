@@ -14,3 +14,8 @@ method=binarysum_msg
 section=commands
 caption=Micro Utils\Binary Sum, show in editor
 method=binarysum_editor
+
+[item10]
+section=commands
+caption=Micro Utils\Convert base-2 numbers to hex NNNN_NNNN form
+method=base2tohex

@@ -1,6 +1,7 @@
 
 2017.12.20
-+ binary sum: added command to output res to editor tab
++ merged two plugins: Binary Sum + Base-2 to hex
++ binary sum: added command to output result to editor tab
 
 2017.12.19
 initial
