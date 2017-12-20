@@ -3,22 +3,22 @@ from cudatext import *
 MAX_BITS = 64
 
 class Command:
-    def show_msg(self):
+    def binarysum_msg(self):
 
         s = dlg_input('Enter decimal or hex (with 0x), to show its binary sum:', '')
         if not s: return
-        s = self.get_result(s)
+        s = self.binarysum_result(s)
         msg_box(s, MB_OK+MB_ICONINFO)
 
-    def show_editor(self):
+    def binarysum_editor(self):
 
         s = dlg_input('Enter decimal or hex (with 0x), to show its binary sum:', '')
         if not s: return
-        s = self.get_result(s)
+        s = self.binarysum_result(s)
         file_open('')
         ed.set_text_all(s)
 
-    def get_result(self, s):
+    def binarysum_result(self, s):
 
         try:
             if s.startswith('0x'):

@@ -1,7 +1,6 @@
 
 2017.12.20
-* changed result format
-+ added command to output res to editor tab
++ binary sum: added command to output res to editor tab
 
 2017.12.19
 initial

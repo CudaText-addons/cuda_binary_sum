@@ -1,16 +1,16 @@
 [info]
-title=Binary Sum
-desc=Decomposes a number into sum of 2^N
+title=Micro Utils
+desc=Some commands to work with bin/hex numbers, etc
 type=cudatext-plugin
-subdir=cuda_binary_sum
-homepage=https://github.com/CudaText-addons/cuda_binary_sum
+subdir=cuda_micro_utils
+homepage=https://github.com/CudaText-addons/cuda_micro_utils
 
 [item2]
 section=commands
-caption=Binary Sum\Show in messagebox
-method=show_msg
+caption=Micro Utils\Binary Sum, show in messagebox
+method=binarysum_msg
 
 [item3]
 section=commands
-caption=Binary Sum\Show in editor
-method=show_editor
+caption=Micro Utils\Binary Sum, show in editor
+method=binarysum_editor
