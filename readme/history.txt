@@ -1,6 +1,9 @@
 
+2018.01.09
++ merged with plugin "Sort lines by length"
+
 2017.12.20
-+ merged two plugins: Binary Sum + Base-2 to hex
++ merged two plugins: "Binary Sum" + "Base-2 to hex"
 + binary sum: added command to output result to editor tab
 
 2017.12.19

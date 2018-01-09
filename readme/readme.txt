@@ -22,5 +22,10 @@ Command reads current text as a list of base-2 nums (separators: , ; space tab n
 converts them to list of hex NNNN_NNNN, writes result to a new tab.
 
 
+Sort lines by length
+====================
+Sorts all lines in the current editor. First go short lines, then longer. Same len lines sorted by text.
+
+
 author: Alexey (CudaText)
 license: MIT

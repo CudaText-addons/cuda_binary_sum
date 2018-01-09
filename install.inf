@@ -1,9 +1,14 @@
 [info]
 title=Micro Utils
-desc=Some commands to work with bin/hex numbers, etc
+desc=Minor commands to work with bin/hex numbers, etc
 type=cudatext-plugin
 subdir=cuda_micro_utils
 homepage=https://github.com/CudaText-addons/cuda_micro_utils
+
+[item1]
+section=commands
+caption=Micro Utils\Sort lines by length
+method=sort_by_len
 
 [item2]
 section=commands
