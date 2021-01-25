@@ -27,5 +27,5 @@ Sort lines by length
 Sorts all lines in the current editor. First go short lines, then longer. Same len lines sorted by text.
 
 
-author: Alexey (CudaText)
+author: Alexey Torgashin (CudaText)
 license: MIT
